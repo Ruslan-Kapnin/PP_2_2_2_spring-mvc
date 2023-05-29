@@ -1,4 +1,4 @@
-package web.model.dao;
+package web.dao;
 
 import web.model.Car;
 
@@ -6,5 +6,6 @@ import java.util.List;
 
 public interface CarDAO {
     int MAX_CARS = 5;
+
     List<Car> getCars(int amount);
 }

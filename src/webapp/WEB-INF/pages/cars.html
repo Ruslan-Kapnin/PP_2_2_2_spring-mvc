@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Cars table</title>
@@ -13,7 +12,7 @@
             <th>MODEL</th>
             <th>SERIES</th>
         </tr>
-        <tr th:each ="car : ${cars}">
+        <tr th:each="car : ${cars}">
             <td th:utext="${car.getId}">...</td>
             <td th:utext="${car.getModel}">...</td>
             <td th:utext="${car.getSeries}">...</td>

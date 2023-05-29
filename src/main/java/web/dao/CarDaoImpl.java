@@ -1,4 +1,4 @@
-package web.model.dao;
+package web.dao;
 
 import org.springframework.stereotype.Component;
 import web.model.Car;
@@ -12,7 +12,7 @@ public class CarDaoImpl implements CarDAO {
 
     public CarDaoImpl() {
         for (int i = 1; i <= MAX_CARS; i++) {
-            cars.add(new Car(i, "Model" + " " + i*2, i*101546));
+            cars.add(new Car(i, "Model" + " " + i * 2, i * 101546));
         }
     }
 
